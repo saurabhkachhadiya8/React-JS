@@ -1,0 +1,119 @@
+body {
+    height: 100vh;
+    background: linear-gradient(225deg, #3498db, #2980b9, #8e44ad, #9b59b6);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+button {
+    color: #fff;
+    border: none;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    background: linear-gradient(270deg, #931297, #15158d);
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
+}
+
+.reset button {
+    border-radius: 20px;
+    margin-top: 15px;
+    height: 40px;
+    width: 40%;
+    font-size: 20px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 20% 30%;
+    }
+
+    50% {
+        background-position: 50% 30%;
+    }
+
+    100% {
+        background-position: 20% 30%;
+    }
+}
+.counter {
+    border: 1px solid #000;
+    width: 20%;
+    padding: 20px 0 40px;
+    border: none;
+    margin: 70px auto;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: 1px solid rgba(255, 255, 255, 0.226);
+    border-radius: 15px;
+    position: relative;
+}
+
+.square {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    animation: square 10s linear infinite;
+    animation-delay: calc(-1s);
+}
+
+@keyframes square {
+
+    0%,
+    100% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+}
+.square:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    top: -15px;
+    right: -55px;
+}
+
+.square:nth-child(2) {
+    width: 150px;
+    height: 150px;
+    top: 105px;
+    left: -125px;
+}
+
+.square:nth-child(3) {
+    width: 60px;
+    height: 60px;
+    bottom: 85px;
+    right: -45px;
+}
+
+.square:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    bottom: 35px;
+    left: -95px;
+}
+
+.square:nth-child(5) {
+    width: 50px;
+    height: 50px;
+    top: -15px;
+    left: -25px;
+}
+
+.square:nth-child(6) {
+    width: 85px;
+    height: 85px;
+    top: 165px;
+    right: -155px;
+}
+
+

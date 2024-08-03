@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.container{
+    width: 1180px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+header .logo a,footer .logo a{
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+header ul li a{
+    padding-left: 20px;
+    font-size: 20px;
+    color: white;
+}
+.slider{
+    background: url('./assets/img/banner.jpg') no-repeat center;
+    background-size: cover;
+}
+footer{
+    background: url('./assets/img/footer.jpg') no-repeat center;
+    background-size: cover;
+}
