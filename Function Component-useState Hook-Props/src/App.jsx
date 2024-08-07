@@ -1,5 +1,6 @@
 import { useState } from "react"
 import FunctionCom from "./Component/FunctionCom"
+import EmployeeData from "./Component/EmployeeData";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         dec={decrement}
         reset={reset}
       />
+      <EmployeeData/>
     </div>
   )
 }
