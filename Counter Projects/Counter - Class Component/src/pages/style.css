@@ -1,0 +1,46 @@
+h1 {
+    background: linear-gradient(225deg, #a97153, #ce5e23, #4b985a, #07a326);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 20% 30%;
+    }
+
+    50% {
+        background-position: 50% 30%;
+    }
+
+    100% {
+        background-position: 20% 30%;
+    }
+}
+
+.State .counter,.Props .counter {
+    border: 1px solid #000;
+    width: 60%;
+    padding: 40px;
+    margin: 70px auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: 1px solid #ffffff3a;
+    border-radius: 15px;
+}
+
+.State button,.Props button {
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 105px;
+    font-size: 35px;
+    background: green;
+}
+
+.State .reset button,.Props .reset button {
+    font-size: 20px;
+}
