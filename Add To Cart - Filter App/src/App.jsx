@@ -44,8 +44,7 @@ function App() {
   }, [])
 
   return (
-    <div align="center">
-      <h1>Filter App</h1>
+    <div>
       <Filter
         products={record}
         category={category}
