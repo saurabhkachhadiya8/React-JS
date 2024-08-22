@@ -5,7 +5,7 @@ const Category = [
     },
     {
         id: 2,
-        name: "Mans"
+        name: "Men"
     },
     {
         id: 3,

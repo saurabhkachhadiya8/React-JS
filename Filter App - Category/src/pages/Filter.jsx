@@ -9,7 +9,7 @@ const Filter = ({ products,category }) => {
                 {
                     Category.map((cg) => {
                         return (
-                            <button onClick={() => category(cg.name)} key={cg.id} style={{margin:'0 10px'}}>{cg.name}</button>
+                            <button onClick={() => category(cg.name)} key={cg.id} style={{margin:'0 10px',width:'80px',height:'30px',backgroundColor:'#000',color:'#fff',border:'1px solid #000',borderRadius:'3px'}}>{cg.name}</button>
                         )
                     })
                 }
