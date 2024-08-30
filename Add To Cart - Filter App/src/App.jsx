@@ -27,17 +27,12 @@ function App() {
     }
     Products.map((val) => {
       if (val.id == id) {
-        if (localStorage.getItem('cart') === null || localStorage.getItem('cart') === undefined) {
-          cart.push(val)
-          localStorage.setItem('cart', JSON.stringify(cart))
-        } else {
-          recentData.push(val)
-          localStorage.setItem('cart', JSON.stringify(recentData))
-        }
+        recentData.push(val)
+        localStorage.setItem('cart', JSON.stringify(recentData))
       }
     })
   }
-  
+
   useEffect(() => {
     setRecord(Products)
     setCart(JSON.parse(localStorage.getItem('cart')) || []);

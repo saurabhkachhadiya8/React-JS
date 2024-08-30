@@ -1,12 +1,11 @@
 import React from 'react'
 
-const Cart = () => {
+const Cart = ({cart}) => {
     return (
         <div>
             <h1>View Cart</h1>
-            <div style={{ width: '20%' }}>
-                <h2>View Cart</h2>
-                <table border={1} width={'100%'} style={{ textAlign: 'center' }}>
+            <div>
+                <table border={1} width={'100%'} cellPadding={'10px'} style={{ textAlign: 'center', fontSize: '20px' }}>
                     <thead>
                         <tr>
                             <th>Srno</th>
@@ -23,11 +22,11 @@ const Cart = () => {
                                 return (
                                     <tr key={c.id}>
                                         <td>{++index}</td>
-                                        <td><img src={c.img} style={{ height: "50px", objectFit: 'cover' }} /></td>
+                                        <td><img src={c.img} style={{ width: "50px", objectFit: 'cover' }} /></td>
                                         <td>{c.title}</td>
-                                        <td>₹{c.newPrice}</td><td></td><td></td>
-                                        {/* <td>{c.qty}</td>
-                                            <td>{c.newPrice * c.qty}</td> */}
+                                        <td>₹{c.newPrice}</td>
+                                        <td>{c.qty}</td>
+                                        <td>{c.newPrice * c.qty}</td>
                                     </tr>
                                 )
                             })

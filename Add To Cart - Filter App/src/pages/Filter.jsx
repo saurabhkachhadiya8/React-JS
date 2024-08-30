@@ -1,5 +1,6 @@
 import React from 'react'
 import { Category } from './Data'
+import Cart from './Cart'
 
 const Filter = ({ products, category, addCart, cart }) => {
     return (
@@ -67,38 +68,7 @@ const Filter = ({ products, category, addCart, cart }) => {
                     </div>
                 </div>
                 <div className="cart" style={{ width: '30%' }}>
-                    <h1>View Cart</h1>
-                    <div style={{ width: '100%' }}>
-                        <h2>View Cart</h2>
-                        <table border={1} width={'100%'} cellPadding={'10px'} style={{ textAlign: 'center',fontSize:'20px' }}>
-                            <thead>
-                                <tr>
-                                    <th>Srno</th>
-                                    <th>Image</th>
-                                    <th>Name</th>
-                                    <th>Price</th>
-                                    <th>Qty</th>
-                                    <th>Total</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {
-                                    cart.map((c, index) => {
-                                        return (
-                                            <tr key={c.id}>
-                                                <td>{++index}</td>
-                                                <td><img src={c.img} style={{ width: "50px", objectFit: 'cover' }} /></td>
-                                                <td>{c.title}</td>
-                                                <td>₹{c.newPrice}</td>
-                                                <td>{c.qty}</td>
-                                                <td>{c.newPrice * c.qty}</td>
-                                            </tr>
-                                        )
-                                    })
-                                }
-                            </tbody>
-                        </table>
-                    </div>
+                    <Cart cart={cart}/>
                 </div>
             </div>
         </div >
