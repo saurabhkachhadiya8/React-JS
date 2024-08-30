@@ -1,5 +1,5 @@
-import ControllComponent from "./ControllComponent"
-import UncontrollComponent from "./UncontrollComponent"
+import ControllComponent from "./My files/ControllComponent"
+import UncontrollComponent from "./My files/UncontrollComponent"
 
 function App() {
 
