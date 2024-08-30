@@ -39,7 +39,7 @@ const UncontrollComponent = () => {
                     <table border={1} width={"40%"} cellPadding={'10'} style={{ fontSize: '20px' }}>
                         <thead>
                             <tr>
-                                <th width={"11%"}>Sr no.</th>
+                                <th width={"15%"}>Sr no.</th>
                                 <th>Name</th>
                                 <th>Course</th>
                             </tr>
