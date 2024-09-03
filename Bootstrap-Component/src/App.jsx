@@ -1,7 +1,7 @@
 function App() {
   return (
     <div>
-      <h1>Form</h1>
+      <h1>Bootstrap Component</h1>
     </div>
   )
 }

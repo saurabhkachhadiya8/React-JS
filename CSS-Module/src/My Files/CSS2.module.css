@@ -1,0 +1,10 @@
+.heading{
+    letter-spacing: 5px;
+    font-size: 50px;
+}
+.p{
+    font-size: larger;
+    font-weight: 600;
+    word-spacing: 10px;
+    text-indent: 100px;
+}
