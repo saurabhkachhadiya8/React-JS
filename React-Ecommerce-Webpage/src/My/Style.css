@@ -1,0 +1,12 @@
+.container{
+    max-width: 1500px;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
