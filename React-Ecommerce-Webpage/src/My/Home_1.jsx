@@ -7,10 +7,10 @@ import PopularProduct from './4_PopularProduct/PopularProduct'
 import OfferSlider from './5_OfferSlider/OfferSlider'
 import ServiceSlider from './6_ServiceSlider/ServiceSlider'
 import Deal from './7_Deal/Deal'
+import ProductCardSlider from './8_ProductCardSlider/ProductCardSlider'
 import Reviews from './9_Reviews/Reviews'
 import Blog from './10_Blog/Blog'
 import Footer from './11_Footer/Footer'
-import ProductCardSlider from './8_ProductCardSlider/ProductCardSlider'
 
 const Home_1 = () => {
   return (
