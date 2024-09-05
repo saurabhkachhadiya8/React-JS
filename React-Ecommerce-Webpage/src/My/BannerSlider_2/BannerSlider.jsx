@@ -1,11 +1,29 @@
 import React from 'react'
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-const Slider = () => {
+const BannerSlider = () => {
+    
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: false,
+        centerMode: true,
+        centerPadding: "0",
+        arrows: false,
+      };
+
     return (
         <section>
-            <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item active" style={{ background: 'url(./img/banner1.jpg) no-repeat center' }}>
+            <Slider {...settings}>
+                <div className="col-lg-3">
+                    <div style={{background:'url(./img/banner1.jpg) no-repeat center',backgroundSize:'cover'}}>
                         <div className="container py-5">
                             <div className="row py-5">
                                 <div className="sliderContent col-lg-5 pe-5 py-5">
@@ -17,7 +35,9 @@ const Slider = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="carousel-item" style={{ background: 'url(./img/banner2.jpg) no-repeat center' }}>
+                </div>
+                <div className="col-lg-3">
+                    <div style={{background:'url(./img/banner2.jpg) no-repeat center',backgroundSize:'cover'}}>
                         <div className="container py-5">
                             <div className="row py-5">
                                 <div className="sliderContent col-lg-5 pe-5 py-5">
@@ -30,17 +50,9 @@ const Slider = () => {
                         </div>
                     </div>
                 </div>
-                <button className="carousel-control-prev" style={{opacity:'1'}} type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true" ><i className="fa-solid fa-chevron-left text-black fs-2 fw-bolder" /></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="carousel-control-next" style={{opacity:'1'}} type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true" ><i className="fa-solid fa-chevron-right text-black fs-2 fw-bolder"></i></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
-            </div>
+            </Slider>
         </section>
     )
 }
 
-export default Slider
+export default BannerSlider

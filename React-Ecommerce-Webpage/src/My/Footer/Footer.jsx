@@ -41,8 +41,32 @@ const Footer = () => {
                             <li><h5>Subscribe Our Newsletter</h5></li>
                             <li><input type="text" placeholder='Search here...' className='border rounded px-3 py-2' style={{width:'100%'}} /></li>
                             <li>
-                                <img src="./img/footer-1.jpg" alt="footer-1.jpg" className='rounded' width={'20%'} />
-                                <img src="./img/footer-1.jpg" alt="footer-1.jpg" className='rounded' width={'20%'} />
+                                <a href="#"><i className="fa-brands fa-facebook-f text-black bg-white border fs-5 text-center rounded me-2" style={{width:'35px',height:'35px',lineHeight:'35px'}}></i></a>
+                                <a href="#"><i className="fa-brands fa-x-twitter text-black bg-white border fs-5 text-center rounded me-2" style={{width:'35px',height:'35px',lineHeight:'35px'}}></i></a>
+                                <a href="#"><i className="fa-brands fa-dribbble text-black bg-white border fs-5 text-center rounded me-2" style={{width:'35px',height:'35px',lineHeight:'35px'}}></i></a>
+                                <a href="#"><i className="fa-brands fa-instagram text-black bg-white border fs-5 text-center rounded me-2" style={{width:'35px',height:'35px',lineHeight:'35px'}}></i></a>
+                            </li>
+                            <li className='d-flex justify-content-between'>
+                                <a href="#" className='position-relative' style={{width:'18%'}}>
+                                    <img src="./img/footer-1.jpg" alt="footer-1.jpg" className='rounded' />
+                                    <i className="fa-brands fa-instagram position-absolute fs-2 text-white" style={{top:'50%',left:'50%',transform:'translate(-50%,-50%)',opacity:'0'}}></i>
+                                </a>
+                                <a href="#" className='position-relative' style={{width:'18%'}}>
+                                    <img src="./img/footer-2.jpg" alt="footer-2.jpg" className='rounded' />
+                                    <i className="fa-brands fa-instagram position-absolute fs-2 text-white" style={{top:'50%',left:'50%',transform:'translate(-50%,-50%)',opacity:'0'}}></i>
+                                </a>
+                                <a href="#" className='position-relative' style={{width:'18%'}}>
+                                    <img src="./img/footer-3.jpg" alt="footer-3.jpg" className='rounded' />
+                                    <i className="fa-brands fa-instagram position-absolute fs-2 text-white" style={{top:'50%',left:'50%',transform:'translate(-50%,-50%)',opacity:'0'}}></i>
+                                </a>
+                                <a href="#" className='position-relative' style={{width:'18%'}}>
+                                    <img src="./img/footer-4.jpg" alt="footer-4.jpg" className='rounded' />
+                                    <i className="fa-brands fa-instagram position-absolute fs-2 text-white" style={{top:'50%',left:'50%',transform:'translate(-50%,-50%)',opacity:'0'}}></i>
+                                </a>
+                                <a href="#" className='position-relative' style={{width:'18%'}}>
+                                    <img src="./img/footer-5.jpg" alt="footer-5.jpg" className='rounded' />
+                                    <i className="fa-brands fa-instagram position-absolute fs-2 text-white" style={{top:'50%',left:'50%',transform:'translate(-50%,-50%)',opacity:'0'}}></i>
+                                </a>
                             </li>
                         </ul>
                     </div>

@@ -23,8 +23,8 @@ const SearchBar = () => {
                                 <i className="fa-solid fa-magnifying-glass" />
                             </button>
                         </div>
-                        <ul className="searchBarMenu d-flex column-gap-4 fw-bolder">
-                            <li>
+                        <ul className="searchBarMenu d-flex column-gap-4 fw-bolder m-0">
+                            <li> 
                                 <a href="#" className='text-black'>
                                     <i className="fa-regular fa-user pe-2" />
                                     <span>Account</span>
@@ -55,11 +55,11 @@ const NavBar = () => {
         <nav>
             <div className="container">
                 <div className="row">
-                    <div className="navbar col-lg-12">
+                    <div className="navbar col-lg-12 d-flex align-items-center">
                         <div className="categoriesToggle cursor-pointer">
                             <i className="fa-solid fa-bars-staggered border rounded p-2" />
                         </div>
-                        <ul className="navbarMenu d-flex column-gap-5 align-items-center">
+                        <ul className="navbarMenu d-flex m-0 column-gap-5">
                             <li>
                                 <a href="#" className='text-black'>Home</a>
                             </li>

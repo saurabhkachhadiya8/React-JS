@@ -13,3 +13,6 @@ a{
 .cursor-pointer{
     cursor: pointer;
 }
+img{
+    max-width: 100%;
+}
