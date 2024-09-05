@@ -20,7 +20,7 @@ const BannerSlider = () => {
       };
 
     return (
-        <section>
+        <section className='BannerSlider'>
             <Slider {...settings}>
                 <div className="col-lg-3">
                     <div style={{background:'url(./img/banner1.jpg) no-repeat center',backgroundSize:'cover'}}>
@@ -29,7 +29,7 @@ const BannerSlider = () => {
                                 <div className="sliderContent col-lg-5 pe-5 py-5">
                                     <h5 className='fw-bold'><span className='text-success text-decoration-underline'>100%</span> Organic Fruits</h5>
                                     <h1 className='fw-bold pt-3 pb-4' style={{ fontSize: '55px', letterSpacing: '1.5px',lineHeight:'75px' }}>Explore fresh & juicy fruits.</h1>
-                                    <p className='text-secondary pt-2'>Our fruits are grown in the best conditions to ensure the highest quality and taste.</p>
+                                    <p className='text-secondary pt-2 pe-5'>Our fruits are grown in the best conditions to ensure the highest quality and taste.</p>
                                     <button className='btn btn-success px-4 py-2 fw-bold mt-4'>Shop Now</button>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@ const BannerSlider = () => {
                                 <div className="sliderContent col-lg-5 pe-5 py-5">
                                     <h5 className='fw-bold'><span className='text-success text-decoration-underline'>100%</span> Organic Vegetables</h5>
                                     <h1 className='fw-bold pt-3 pb-4' style={{ fontSize: '55px', letterSpacing: '1.5px',lineHeight:'75px' }}>The best way to stuff your wallet.</h1>
-                                    <p className='text-secondary pt-2'>Our fruits are grown in the best conditions to ensure the highest quality and taste.</p>
+                                    <p className='text-secondary pt-2 pe-5'>Our fruits are grown in the best conditions to ensure the highest quality and taste.</p>
                                     <button className='btn btn-success px-4 py-2 fw-bold mt-4'>Shop Now</button>
                                 </div>
                             </div>

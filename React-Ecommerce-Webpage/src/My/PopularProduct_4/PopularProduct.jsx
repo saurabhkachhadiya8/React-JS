@@ -2,7 +2,7 @@ import React from 'react'
 
 const PopularProduct = () => {
     return (
-        <section style={{ marginTop: '100px' }}>
+        <section className='PopularProduct' style={{ marginTop: '100px' }}>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 text-center" style={{ margin: '0 auto' }}>
@@ -36,13 +36,17 @@ const PopularProduct = () => {
                             <div className="col-lg-9">
                                 <div className="row">
                                     <div className="col-lg-3 mb-4">
-                                        <div className="product-card border rounded" style={{ padding: '12px' }}>
+                                        <div className="product-card border rounded position-relative overflow-hidden" style={{ padding: '12px' }}>
                                             <div className="card-img border rounded position-relative">
                                                 <img src="./img/pop-pro-1.jpg" alt="pop-pro-1.jpg" width={'100%'} className='rounded' />
                                                 <a href="#">
                                                     <i className="fa-solid fa-bag-shopping text-success border rounded-circle p-2 position-absolute" style={{ left: '50%', bottom: '0', transform: 'translate(-50%,50%)', backgroundColor: '#f1f1f1' }}></i>
                                                 </a>
                                             </div>
+                                            <div className="icons position-absolute" style={{ top: '8%', right: '-15%', opacity: '0', visibility: 'hidden' }}>
+                                                <a href="#"><i class="fa-regular fa-heart text-black bg-white border rounded-circle p-2 mb-2 d-block"></i></a>
+                                                <a href="#"><i class="fa-regular fa-eye text-black bg-white border rounded-circle p-2 mb-2 d-block"></i></a>
+                                            </div>
                                             <div className="card-body text-center pt-3">
                                                 <a href="#">
                                                     <span className="text-secondary" style={{ fontSize: '13px', letterSpacing: '1px' }}>Vegetables</span>
@@ -63,13 +67,17 @@ const PopularProduct = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-3 mb-4">
-                                        <div className="product-card border rounded" style={{ padding: '12px' }}>
+                                        <div className="product-card border rounded position-relative overflow-hidden" style={{ padding: '12px' }}>
                                             <div className="card-img border rounded position-relative">
                                                 <img src="./img/pop-pro-2.jpg" alt="pop-pro-1.jpg" width={'100%'} className='rounded' />
                                                 <a href="#">
                                                     <i className="fa-solid fa-bag-shopping text-success border rounded-circle p-2 position-absolute" style={{ left: '50%', bottom: '0', transform: 'translate(-50%,50%)', backgroundColor: '#f1f1f1' }}></i>
                                                 </a>
                                             </div>
+                                            <div className="icons position-absolute" style={{ top: '8%', right: '-15%', opacity: '0', visibility: 'hidden' }}>
+                                                <a href="#"><i class="fa-regular fa-heart text-black bg-white border rounded-circle p-2 mb-2 d-block"></i></a>
+                                                <a href="#"><i class="fa-regular fa-eye text-black bg-white border rounded-circle p-2 mb-2 d-block"></i></a>
+                                            </div>
                                             <div className="card-body text-center pt-3">
                                                 <a href="#">
                                                     <span className="text-secondary" style={{ fontSize: '13px', letterSpacing: '1px' }}>Vegetables</span>
@@ -90,13 +98,17 @@ const PopularProduct = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-3 mb-4">
-                                        <div className="product-card border rounded" style={{ padding: '12px' }}>
+                                        <div className="product-card border rounded position-relative overflow-hidden" style={{ padding: '12px' }}>
                                             <div className="card-img border rounded position-relative">
                                                 <img src="./img/pop-pro-3.jpg" alt="pop-pro-1.jpg" width={'100%'} className='rounded' />
                                                 <a href="#">
                                                     <i className="fa-solid fa-bag-shopping text-success border rounded-circle p-2 position-absolute" style={{ left: '50%', bottom: '0', transform: 'translate(-50%,50%)', backgroundColor: '#f1f1f1' }}></i>
                                                 </a>
                                             </div>
+                                            <div className="icons position-absolute" style={{ top: '8%', right: '-15%', opacity: '0', visibility: 'hidden' }}>
+                                                <a href="#"><i class="fa-regular fa-heart text-black bg-white border rounded-circle p-2 mb-2 d-block"></i></a>
+                                                <a href="#"><i class="fa-regular fa-eye text-black bg-white border rounded-circle p-2 mb-2 d-block"></i></a>
+                                            </div>
                                             <div className="card-body text-center pt-3">
                                                 <a href="#">
                                                     <span className="text-secondary" style={{ fontSize: '13px', letterSpacing: '1px' }}>Vegetables</span>
@@ -117,13 +129,17 @@ const PopularProduct = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-3 mb-4">
-                                        <div className="product-card border rounded" style={{ padding: '12px' }}>
+                                        <div className="product-card border rounded position-relative overflow-hidden" style={{ padding: '12px' }}>
                                             <div className="card-img border rounded position-relative">
                                                 <img src="./img/pop-pro-4.jpg" alt="pop-pro-1.jpg" width={'100%'} className='rounded' />
                                                 <a href="#">
                                                     <i className="fa-solid fa-bag-shopping text-success border rounded-circle p-2 position-absolute" style={{ left: '50%', bottom: '0', transform: 'translate(-50%,50%)', backgroundColor: '#f1f1f1' }}></i>
                                                 </a>
                                             </div>
+                                            <div className="icons position-absolute" style={{ top: '8%', right: '-15%', opacity: '0', visibility: 'hidden' }}>
+                                                <a href="#"><i class="fa-regular fa-heart text-black bg-white border rounded-circle p-2 mb-2 d-block"></i></a>
+                                                <a href="#"><i class="fa-regular fa-eye text-black bg-white border rounded-circle p-2 mb-2 d-block"></i></a>
+                                            </div>
                                             <div className="card-body text-center pt-3">
                                                 <a href="#">
                                                     <span className="text-secondary" style={{ fontSize: '13px', letterSpacing: '1px' }}>Vegetables</span>
@@ -144,13 +160,17 @@ const PopularProduct = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-3 mb-4">
-                                        <div className="product-card border rounded" style={{ padding: '12px' }}>
+                                        <div className="product-card border rounded position-relative overflow-hidden" style={{ padding: '12px' }}>
                                             <div className="card-img border rounded position-relative">
                                                 <img src="./img/pop-pro-5.jpg" alt="pop-pro-1.jpg" width={'100%'} className='rounded' />
                                                 <a href="#">
                                                     <i className="fa-solid fa-bag-shopping text-success border rounded-circle p-2 position-absolute" style={{ left: '50%', bottom: '0', transform: 'translate(-50%,50%)', backgroundColor: '#f1f1f1' }}></i>
                                                 </a>
                                             </div>
+                                            <div className="icons position-absolute" style={{ top: '8%', right: '-15%', opacity: '0', visibility: 'hidden' }}>
+                                                <a href="#"><i class="fa-regular fa-heart text-black bg-white border rounded-circle p-2 mb-2 d-block"></i></a>
+                                                <a href="#"><i class="fa-regular fa-eye text-black bg-white border rounded-circle p-2 mb-2 d-block"></i></a>
+                                            </div>
                                             <div className="card-body text-center pt-3">
                                                 <a href="#">
                                                     <span className="text-secondary" style={{ fontSize: '13px', letterSpacing: '1px' }}>Vegetables</span>
@@ -171,13 +191,17 @@ const PopularProduct = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-3 mb-4">
-                                        <div className="product-card border rounded" style={{ padding: '12px' }}>
+                                        <div className="product-card border rounded position-relative overflow-hidden" style={{ padding: '12px' }}>
                                             <div className="card-img border rounded position-relative">
                                                 <img src="./img/pop-pro-6.jpg" alt="pop-pro-1.jpg" width={'100%'} className='rounded' />
                                                 <a href="#">
                                                     <i className="fa-solid fa-bag-shopping text-success border rounded-circle p-2 position-absolute" style={{ left: '50%', bottom: '0', transform: 'translate(-50%,50%)', backgroundColor: '#f1f1f1' }}></i>
                                                 </a>
                                             </div>
+                                            <div className="icons position-absolute" style={{ top: '8%', right: '-15%', opacity: '0', visibility: 'hidden' }}>
+                                                <a href="#"><i class="fa-regular fa-heart text-black bg-white border rounded-circle p-2 mb-2 d-block"></i></a>
+                                                <a href="#"><i class="fa-regular fa-eye text-black bg-white border rounded-circle p-2 mb-2 d-block"></i></a>
+                                            </div>
                                             <div className="card-body text-center pt-3">
                                                 <a href="#">
                                                     <span className="text-secondary" style={{ fontSize: '13px', letterSpacing: '1px' }}>Vegetables</span>
@@ -198,13 +222,17 @@ const PopularProduct = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-3 mb-4">
-                                        <div className="product-card border rounded" style={{ padding: '12px' }}>
+                                        <div className="product-card border rounded position-relative overflow-hidden" style={{ padding: '12px' }}>
                                             <div className="card-img border rounded position-relative">
                                                 <img src="./img/pop-pro-7.jpg" alt="pop-pro-1.jpg" width={'100%'} className='rounded' />
                                                 <a href="#">
                                                     <i className="fa-solid fa-bag-shopping text-success border rounded-circle p-2 position-absolute" style={{ left: '50%', bottom: '0', transform: 'translate(-50%,50%)', backgroundColor: '#f1f1f1' }}></i>
                                                 </a>
                                             </div>
+                                            <div className="icons position-absolute" style={{ top: '8%', right: '-15%', opacity: '0', visibility: 'hidden' }}>
+                                                <a href="#"><i class="fa-regular fa-heart text-black bg-white border rounded-circle p-2 mb-2 d-block"></i></a>
+                                                <a href="#"><i class="fa-regular fa-eye text-black bg-white border rounded-circle p-2 mb-2 d-block"></i></a>
+                                            </div>
                                             <div className="card-body text-center pt-3">
                                                 <a href="#">
                                                     <span className="text-secondary" style={{ fontSize: '13px', letterSpacing: '1px' }}>Vegetables</span>
@@ -225,12 +253,16 @@ const PopularProduct = () => {
                                         </div>
                                     </div>
                                     <div className="col-lg-3 mb-4">
-                                        <div className="product-card border rounded" style={{ padding: '12px' }}>
+                                        <div className="product-card border rounded position-relative overflow-hidden" style={{ padding: '12px' }}>
                                             <div className="card-img border rounded position-relative">
                                                 <img src="./img/pop-pro-8.jpg" alt="pop-pro-1.jpg" width={'100%'} className='rounded' />
                                                 <a href="#">
                                                     <i className="fa-solid fa-bag-shopping text-success border rounded-circle p-2 position-absolute" style={{ left: '50%', bottom: '0', transform: 'translate(-50%,50%)', backgroundColor: '#f1f1f1' }}></i>
                                                 </a>
+                                            </div>
+                                            <div className="icons position-absolute" style={{ top: '8%', right: '-15%', opacity: '0', visibility: 'hidden' }}>
+                                                <a href="#"><i class="fa-regular fa-heart text-black bg-white border rounded-circle p-2 mb-2 d-block"></i></a>
+                                                <a href="#"><i class="fa-regular fa-eye text-black bg-white border rounded-circle p-2 mb-2 d-block"></i></a>
                                             </div>
                                             <div className="card-body text-center pt-3">
                                                 <a href="#">

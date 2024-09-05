@@ -26,7 +26,7 @@ const OfferSlider = () => {
     }, []);
 
     return (
-        <section style={{ marginTop: '100px' }}>
+        <section className='OfferSlider' style={{ marginTop: '100px' }}>
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
