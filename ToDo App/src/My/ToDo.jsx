@@ -13,6 +13,7 @@ const ToDo = () => {
 
         if (!task || !des) {
             alert("All Fields Are Required");
+            return false;
         }
 
         if (update) {
