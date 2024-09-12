@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Category, Products } from './PopularProduct'
+import { Category, Products } from './PopularProductData'
 
 const PopularProduct = () => {
 

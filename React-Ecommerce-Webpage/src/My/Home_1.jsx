@@ -12,6 +12,8 @@ import Reviews from './9_Reviews/Reviews'
 import Blog from './10_Blog/Blog'
 import Footer from './11_Footer/Footer'
 
+
+
 const Home_1 = () => {
   return (
     <div>
