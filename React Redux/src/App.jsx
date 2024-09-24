@@ -1,8 +1,13 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Counter from "./Pages/Counter"
+
 function App() {
   return (
-    <div>
-      
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Counter />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
