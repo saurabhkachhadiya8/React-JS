@@ -28,7 +28,7 @@ const Products = [
     },
     {
         id: 2,
-        category: "Mans",
+        category: "Men",
         img: "https://m.media-amazon.com/images/I/71nG3R1OPeL._AC_UL480_FMwebp_QL65_.jpg",
         title: "Amazon Brand - Symbol",
         oldPrice: 1499,
@@ -44,7 +44,7 @@ const Products = [
     },
     {
         id: 4,
-        category: "Mans",
+        category: "Men",
         img: "https://m.media-amazon.com/images/I/61yWnrT3eQL._AC_UL480_FMwebp_QL65_.jpg",
         title: "Bellstone",
         oldPrice: 2499,
@@ -52,7 +52,7 @@ const Products = [
     },
     {
         id: 5,
-        category: "Mans",
+        category: "Men",
         img: "https://m.media-amazon.com/images/I/51FICIl4KjL._AC_UL480_FMwebp_QL65_.jpg",
         title: "Lymio",
         oldPrice: 4999,
@@ -76,7 +76,7 @@ const Products = [
     },
     {
         id: 8,
-        category: "Mans",
+        category: "Men",
         img: "https://m.media-amazon.com/images/I/71RbgrPSOaL._AC_UL480_FMwebp_QL65_.jpg",
         title: "Majestic Man",
         oldPrice: 1499,
@@ -92,7 +92,7 @@ const Products = [
     },
     {
         id: 10,
-        category: "Mans",
+        category: "Men",
         img: "https://m.media-amazon.com/images/I/51j7e1AMfoL._AC_UL480_FMwebp_QL65_.jpg",
         title: "Amazon Brand - INKAST",
         oldPrice: 2199,
@@ -100,7 +100,7 @@ const Products = [
     },
     {
         id: 11,
-        category: "Mans",
+        category: "Men",
         img: "https://m.media-amazon.com/images/I/61ZWbjLxX6L._AC_UL480_FMwebp_QL65_.jpg",
         title: "Arvind",
         oldPrice: 1999,
@@ -124,7 +124,7 @@ const Products = [
     },
     {
         id: 14,
-        category: "Mans",
+        category: "Men",
         img: "https://m.media-amazon.com/images/I/51eUs2CE1jL._AC_UL480_FMwebp_QL65_.jpg",
         title: "Noble Monk",
         oldPrice: 1299,
@@ -140,7 +140,7 @@ const Products = [
     },
     {
         id: 16,
-        category: "Mans",
+        category: "Men",
         img: "https://m.media-amazon.com/images/I/81Be4hgx1gL._AC_UL480_FMwebp_QL65_.jpg",
         title: "Symbol Premium",
         oldPrice: 2599,
@@ -164,7 +164,7 @@ const Products = [
     },
     {
         id: 19,
-        category: "Mans",
+        category: "Men",
         img: "https://m.media-amazon.com/images/I/51RgKA1pC1L._AC_UL480_FMwebp_QL65_.jpg",
         title: "CB-COLEBROOK",
         oldPrice: 2195,
@@ -180,7 +180,7 @@ const Products = [
     },
     {
         id: 21,
-        category: "Mans",
+        category: "Men",
         img: "https://m.media-amazon.com/images/I/61ZWbjLxX6L._AC_UL480_FMwebp_QL65_.jpg",
         title: "Arvind",
         oldPrice: 1999,
@@ -212,7 +212,7 @@ const Products = [
     },
     {
         id: 25,
-        category: "Mans",
+        category: "Men",
         img: "https://m.media-amazon.com/images/I/71eUwDk8z+L._AC_UL480_FMwebp_QL65_.jpg",
         title: "Allen Solly",
         oldPrice: 1099,

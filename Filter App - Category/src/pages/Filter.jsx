@@ -18,7 +18,7 @@ const Filter = ({ products,category }) => {
                 {
                     products.map((p) => {
                         return (
-                            <div key={p.id} style={{ width: '20%', border: '1px solid #000',padding:'15px',margin:'0 10px 20px' }}>
+                            <div key={p.id} style={{ width: '20%', border: '1px solid #000',padding:'20px 15px',margin:'0 10px 20px' }}>
                                 <div>
                                     <img src={p.img} style={{ height: "200px", objectFit: "contain" }} alt="..." />
                                     <div>

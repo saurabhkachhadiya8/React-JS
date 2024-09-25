@@ -94,7 +94,7 @@ nav ul.navbarMenu li:hover ul.dropdown {
     background-color: #0006;
     top: -15%;
     left: -7%;
-    border-radius: 100%;
+    border-radius: 0 50% 50% 50%;
     transition: all 0.3s;
     z-index: 1;
 }
