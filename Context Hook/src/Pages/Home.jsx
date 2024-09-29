@@ -3,11 +3,12 @@ import { useCounter } from '../context/CounterContext'
 
 const Home = () => {
 
-    const {no} = useCounter;
+  const { no } = useCounter();
 
   return (
-    <div>
-        <h1>Count : {no}</h1>
+    <div align="center">
+      <h1>Context Hook</h1>
+      <h2>Count : {no}</h2>
     </div>
   )
 }

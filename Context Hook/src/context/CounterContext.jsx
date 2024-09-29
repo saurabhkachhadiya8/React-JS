@@ -12,6 +12,8 @@ const Counter = ({ children }) => {
         </CounterContext.Provider>
     )
 }
+
+// custom hook
 const useCounter = () => {
     return useContext(CounterContext);
 }
