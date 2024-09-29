@@ -1,0 +1,28 @@
+[
+    {
+        "users": [
+            {
+                "id": 1,
+                "name": "John",
+                "phone": 1234
+            },
+            {
+                "id": 2,
+                "name": "Jane",
+                "phone": 12345
+            }
+        ]
+    },
+    {
+        "country": [
+            {
+                "id": 1,
+                "name": "Bharat"
+            },
+            {
+                "id": 2,
+                "name": "USA"
+            }
+        ]
+    }
+]
