@@ -11,10 +11,10 @@ const PopularProduct = () => {
 
     const category = (name) => {
         if (name === "All") {
-            setRecord(Products)
+            setRecord(Products);
         } else {
-            let data = Products.filter((p) => p.category === name)
-            setRecord(data)
+            let data = Products.filter((p) => p.category === name);
+            setRecord(data);
         }
     }
 
@@ -39,6 +39,14 @@ const PopularProduct = () => {
                                                 )
                                             })
                                         }
+                                        {/* {
+                                            Category.map((cg,i) => {
+                                                const { id, name } = cg;
+                                                return (
+                                                    <li onClick={ () => category(name) } key={id} className='d-flex align-items-center justify-content-between fw-bolder border rounded p-3 mb-2 cursor-pointer' style={{ fontSize: '15px', backgroundColor: '#f1f1f1',color:record.some((r) => r.category === 'All') && i == 0 ? 'green' : record.some((r) => r.category === name) ? 'green' : 'black' }}>{name} <i className="fa-solid fa-arrow-right"></i></li>
+                                                )
+                                            })
+                                        } */}
                                     </ul>
                                 </div>
                                 <div className="col-lg-12">
