@@ -1,12 +1,16 @@
-import Api from "./pages/api"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import AddToDo from "./pages/AddToDo";
 
 function App() {
-
   return (
     <div>
-      <Api/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<AddToDo />} />
+        </Routes>
+      </BrowserRouter>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
