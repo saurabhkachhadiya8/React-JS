@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AddToDo from "./pages/AddToDo";
+import './style.css'
 
 function App() {
   return (
