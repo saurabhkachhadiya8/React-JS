@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": "15f5",
+      "name": "hsfdh",
+      "email": "rag@gmail.com",
+      "password": "12345",
+      "phone": "558",
+      "city": "aegrfg",
+      "role": "admin"
+    },
+    {
+      "id": "bf59",
+      "name": "dfbfd",
+      "email": "sf@gmail.com",
+      "password": "ger",
+      "phone": "489",
+      "city": "wefrasd",
+      "role": "user"
+    },
+    {
+      "id": "5eb5",
+      "name": "vgfdz",
+      "email": "fdgv@gmail.com",
+      "password": "fasd",
+      "phone": "14",
+      "city": "asv",
+      "role": "user"
+    }
+  ]
+}
