@@ -1,55 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ViewForm from './components/ViewForm';
-import './App.css';
-import AddForm from './components/AddFOrm';
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Add from "./Pages/Add"
+import View from "./Pages/View"
+import Edit from "./Pages/Edit"
 
 function App() {
-  const [record, setRecord] = useState(() => {
-    const storedRecords = localStorage.getItem('record');
-    return storedRecords ? JSON.parse(storedRecords) : [];
-  });
 
-  // Update localStorage whenever record state changes
-  useEffect(() => {
-    localStorage.setItem('record', JSON.stringify(record));
-  }, [record]);
-
-  const addRecord = (newRecord) => {
-    setRecord([...record, { ...newRecord, id: Date.now(), status: 'active' }]);
-  };
-
-  const deleteRecord = (id) => {
-    setRecord(record.filter((record) => record.id !== id));
-  };
-
-  const updateRecord = (updatedRecord) => {
-    setRecord(record.map((record) => (record.id === updatedRecord.id ? updatedRecord : record)));
-  };
-
-  const toggleStatus = (id) => {
-    setRecord(
-      record.map((record) =>
-        record.id === id ? { ...record, status: record.status === 'active' ? 'inactive' : 'active' } : record
-      )
-    );
-  };
-
-  const Delete = (ids) => {
-    setRecord(record.filter((record) => !ids.includes(record.id)));
-  };
 
   return (
-    <div className="app-container">
-      <Router>
+    <>
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<ViewForm records={record} deleteRecord={deleteRecord} toggleStatus={toggleStatus} Delete={Delete} />} />
-          <Route path="/add" element={<AddForm addRecord={addRecord} />} />
-          <Route path="/edit/:id" element={<AddForm records={record} updateRecord={updateRecord} />} />
+          <Route path="/" element={<Add />} />
+          <Route path="/view" element={<View />} />
+          <Route path="/edit" element={<Edit />} />
         </Routes>
-      </Router>
-    </div>
-  );
+      </BrowserRouter>
+    </>
+  )
 }
 
-export default App;
+export default App
