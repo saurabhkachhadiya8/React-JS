@@ -60,8 +60,8 @@ const ToDo = () => {
                                 update ? <button type="submit"><i className="fa-solid fa-rotate-right fa-flip-horizontal"></i></button> : <button type="submit"><i className="fa-solid fa-plus"></i></button>
                             }
                         </form>
+                        <h2>Tasks</h2>
                         <div className='allTasks'>
-                            <h2>Tasks</h2>
                             {
                                 list.map((data, i) => {
                                     const { id, task, des } = data;
