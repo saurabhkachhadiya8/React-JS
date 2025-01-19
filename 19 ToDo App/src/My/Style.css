@@ -1,89 +1,216 @@
-*{
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
 }
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
-    background-color: #e2eede;
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #76c7c0, #d6eaff);
+    color: #333;
+    padding: 47px 20px;
 }
-.container{
-    width: 400px;
+
+/* Container */
+.container {
+    max-width: 500px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 20px;
     margin: 0 auto;
+    animation: fadeIn 1s ease-out;
 }
-.row{
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header */
+.ToDo h1 {
+    font-size: 2.8rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Form */
+form {
     display: flex;
-    flex-wrap: wrap;
-}
-.ToDo{
-    width: 100%;
-    height: 768px;
-    border: 5px solid #a7cd9c;
-    background-color: #fff;
-    margin: 50px 0;
-    border-radius: 10px;
-    padding: 30px;
-    position: relative;
-}
-h1{
-    font-size: 50px;
+    flex-direction: column;
+    gap: 15px;
     margin-bottom: 20px;
+    padding: 15px 0;
+    overflow: hidden;
 }
-button{
-    cursor: pointer;
-}
-form{
-    position: relative;
-}
-form input,form textarea{
+
+form input,
+form textarea {
     width: 100%;
+    padding: 12px;
+    font-size: 1rem;
     resize: none;
-    padding: 7px 10px;
-    border-radius: 5px;
     border: none;
-    background-color: #e2eede;
+    border-radius: 12px;
+    background: #f9f9f9;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(76, 175, 80, 0.2);
+}
+
+form button {
+    align-self: center;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #43a047, #76c7c0);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #388e3c, #4db6ac);
+    transform: scale(1.05);
+}
+
+/* Tasks Section */
+h2 {
+    font-size: 1.8rem;
+    color: #444;
     margin-bottom: 10px;
-    font-size: 18px;
-}
-form button{
-    position: absolute;
-    font-size: 20px;
-    padding: 5px 7px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    border: none;
-    background-color: #a7cd9c;
-    border-radius: 5px;
-}
-h2{
-    margin: 10px 0 5px;
-}
-.allTasks{
-    height: 410px;
-    overflow-y: auto;
-    scrollbar-width: none;
-}
-.allTasks button{
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
-    background-color: transparent;
-    border: transparent;
-}
-.allTasks .task{
-    border: 3px solid #a7cd9c;
-    border-radius: 10px;
-    margin-top: 10px;
-    background-color: #e2eede;
-    text-align: left;
-    padding: 15px;
-}
-.allTasks .task .action{
     text-align: center;
 }
-.allTasks .task p{
-    padding: 10px 0;
+
+.allTasks {
+    max-height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+.allTasks::-webkit-scrollbar {
+    width: 10px;
+}
+
+.allTasks::-webkit-scrollbar-thumb {
+    background: #76c7c0;
+    border-radius: 10px;
+}
+
+.allTasks::-webkit-scrollbar-track {
+    background: #e6f7f5;
+}
+
+/* Task Card */
+.allTasks .task {
+    background: linear-gradient(43deg, #cef0eb, #f9f9f9);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.allTasks .task:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.allTasks .task h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.allTasks .task p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Action Buttons */
+.allTasks .task .action {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.allTasks .task .action button {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: none;
+    color: #76c7c0;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.allTasks .task .action button:hover {
+    background: #76c7c0;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .ToDo h1 {
+        font-size: 2.2rem;
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .allTasks .task h3 {
+        font-size: 1.2rem;
+    }
+
+    .allTasks .task p {
+        font-size: 0.9rem;
+    }
+
+    .allTasks .task .action button {
+        font-size: 1.2rem;
+        width: 35px;
+        height: 35px;
+    }
 }

@@ -61,44 +61,46 @@ const Crud = () => {
                             }
                         </form>
                         <h2>All Records</h2>
-                        <table width={'100%'} border={1}>
-                            <thead>
-                                <tr style={{backgroundColor:'#f1f1f1'}}>
-                                    <th width={'10%'}>Sr No.</th>
-                                    <th width={'30%'}>Name</th>
-                                    <th width={'37%'}>Email</th>
-                                    <th width={'23%'}>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {
-                                    record.map((data, i) => {
-                                        const { id, name, email } = data;
-                                        return (
-                                            i % 2 != 0 ? (
-                                                <tr key={i} style={{ backgroundColor: '#f1f1f1' }}>
-                                                    <td>{++i}</td>
-                                                    <td>{name}</td>
-                                                    <td>{email}</td>
-                                                    <td>
-                                                        <button onClick={() => handleUpdate(id)}>Edit</button> || <button onClick={() => handleDelete(id)}>Delete</button>
-                                                    </td>
-                                                </tr>
-                                            ) : (
-                                                <tr key={i}>
-                                                    <td>{++i}</td>
-                                                    <td>{name}</td>
-                                                    <td>{email}</td>
-                                                    <td>
-                                                        <button onClick={() => handleUpdate(id)}>Edit</button> || <button onClick={() => handleDelete(id)}>Delete</button>
-                                                    </td>
-                                                </tr>
+                        <div className="data_tbl">
+                            <table width={'100%'} border={1}>
+                                <thead>
+                                    <tr style={{ backgroundColor: '#f1f1f1' }}>
+                                        <th width={'8%'}>#</th>
+                                        <th width={'30%'}>Name</th>
+                                        <th width={'37%'}>Email</th>
+                                        <th width={'25%'}>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {
+                                        record.map((data, i) => {
+                                            const { id, name, email } = data;
+                                            return (
+                                                i % 2 != 0 ? (
+                                                    <tr key={i} style={{ backgroundColor: '#f1f1f1' }}>
+                                                        <td>{++i}</td>
+                                                        <td>{name}</td>
+                                                        <td>{email}</td>
+                                                        <td>
+                                                            <button onClick={() => handleUpdate(id)}>Edit</button> || <button onClick={() => handleDelete(id)}>Delete</button>
+                                                        </td>
+                                                    </tr>
+                                                ) : (
+                                                    <tr key={i}>
+                                                        <td>{++i}</td>
+                                                        <td>{name}</td>
+                                                        <td>{email}</td>
+                                                        <td>
+                                                            <button onClick={() => handleUpdate(id)}>Edit</button> || <button onClick={() => handleDelete(id)}>Delete</button>
+                                                        </td>
+                                                    </tr>
+                                                )
                                             )
-                                        )
-                                    })
-                                }
-                            </tbody>
-                        </table>
+                                        })
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
